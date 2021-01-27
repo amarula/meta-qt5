@@ -13,8 +13,8 @@ LIC_FILES_CHKSUM = " \
     file://LICENSE.QT-LICENSE-AGREEMENT;md5=c8b6dd132d52c6e5a545df07a4e3e283 \
 "
 
-require qt5-native.inc
 require qt5-git.inc
+require qt5-native.inc
 
 # common for qtbase-native, qtbase-nativesdk and qtbase
 # Patches from https://github.com/meta-qt5/qtbase/commits/b5.15-shared
