@@ -1,8 +1,8 @@
 # Copyright (C) 2012-2016 O.S. Systems Software LTDA.
-# Copyright (C) 2013-2020 Martin Jansa <martin.jansa@gmail.com>
+# Copyright (C) 2013-2021 Martin Jansa <martin.jansa@gmail.com>
 
 QT_MODULE ?= "${BPN}"
-QT_MODULE_BRANCH ?= "5.15.2"
+QT_MODULE_BRANCH ?= "5.15"
 QT_MODULE_BRANCH_PARAM ?= "branch=${QT_MODULE_BRANCH}"
 
 # each module needs to define valid SRCREV
