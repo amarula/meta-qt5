@@ -1,0 +1,30 @@
+From 1726409b87b3f6ca25fb1b7f834dad961b798efd Mon Sep 17 00:00:00 2001
+From: Khem Raj <raj.khem@gmail.com>
+Date: Tue, 2 Mar 2021 13:18:47 -0800
+Subject: [PATCH] qfloat16: Include <limits> header
+
+gcc11 complains
+ error: 'numeric_limits' is not a class template
+ |   344 | template<> class numeric_limits<const QT_PREPEND_NAMESPACE(qfloat16)>
+
+This is because its missing right header which perhaps is included
+implicitly in older compilers
+
+Upstream-Status: Pending
+Signed-off-by: Khem Raj <raj.khem@gmail.com>
+---
+ src/corelib/global/qfloat16.h | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/src/corelib/global/qfloat16.h b/src/corelib/global/qfloat16.h
+index b76d2b9616..66383722e6 100644
+--- a/src/corelib/global/qfloat16.h
++++ b/src/corelib/global/qfloat16.h
+@@ -43,6 +43,7 @@
+ #include <QtCore/qglobal.h>
+ #include <QtCore/qmetatype.h>
+ #include <string.h>
++#include <limits>
+ 
+ #if defined(QT_COMPILER_SUPPORTS_F16C) && defined(__AVX2__) && !defined(__F16C__)
+ // All processors that support AVX2 do support F16C too. That doesn't mean

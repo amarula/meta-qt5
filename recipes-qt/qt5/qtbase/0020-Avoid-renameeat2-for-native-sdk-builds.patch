@@ -1,4 +1,4 @@
-From e98e9c57e8c614ae14e1f3a423c508a59025fd49 Mon Sep 17 00:00:00 2001
+From c801c77a22c16a316adb25f9c30731005a71aa24 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Andreas=20M=C3=BCller?= <schnitzeltony@gmail.com>
 Date: Sun, 14 Apr 2019 13:27:58 +0200
 Subject: [PATCH] Avoid renameeat2 for native(sdk) builds
