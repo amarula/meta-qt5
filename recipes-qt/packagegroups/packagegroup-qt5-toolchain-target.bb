@@ -7,11 +7,6 @@ inherit packagegroup
 
 PACKAGEGROUP_DISABLE_COMPLEMENTARY = "1"
 
-# Requires Ruby to work
-USE_RUBY = " \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtwebkit-dev', '', d)} \
-"
-
 # Requires Wayland to work
 USE_WAYLAND = " \
     qtwayland-dev \
@@ -93,7 +88,6 @@ RDEPENDS_${PN} += " \
     qttools-staticdev \
     qttools-tools \
     ${@bb.utils.contains('DISTRO_FEATURES', 'wayland', '${USE_WAYLAND}', '', d)} \
-    ${USE_RUBY} \
     ${@bb.utils.contains('DISTRO_FEATURES', 'x11', '${USE_X11}', '', d)} \
     qtwebsockets-dev \
     qtwebsockets-mkspecs \
