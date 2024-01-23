@@ -139,6 +139,7 @@ instructions:
 
       # EXCLUDE FROM WORLD
       rm -fv ${SOURCE_DIR}/recipes-qt/examples/qt5-opengles2-test_git.bb
+      rm -fv ${SOURCE_DIR}/recipes-qt/qt5/qtwebkit_git.bb
 
       # build only recipes found under recipes-qt
       bitbake $(find ${SOURCE_DIR}/recipes-qt -name *.bb | xargs -n1 basename | sed -e 's/\([^._]*\).*/\1/')
