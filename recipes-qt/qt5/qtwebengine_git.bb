@@ -180,7 +180,6 @@ SRC_URI += " \
     file://chromium/0011-chromium-Add-missing-include-for-C-strncpy.patch;patchdir=src/3rdparty \
     file://chromium/0011-chromium-skia-Fix-build-with-gcc-12.patch;patchdir=src/3rdparty \
     file://chromium/0012-Remove-unsetting-_FILE_OFFSET_BITS.patch;patchdir=src/3rdparty \
-    file://chromium/0014-avcodec-x86-mathops-clip-constants-used-with-shift-i.patch;patchdir=src/3rdparty \
 "
 
 # Patches from https://github.com/meta-qt5/qtwebengine-chromium/commits/87-based
@@ -199,8 +198,8 @@ SRC_URI:append:libc-musl = "\
     file://chromium/0023-chromium-musl-initialize-msghdr-in-a-compatible-mann.patch;patchdir=src/3rdparty \
 "
 
-SRCREV_qtwebengine = "3a11b38575e6aa929d1e7d5d11d0acf61eae6420"
-SRCREV_chromium = "ce00f9b5aa761866b24d6460e10aacb671c92cf0"
+SRCREV_qtwebengine = "17fd3176988586168bee8654008a097a5f23ec1d"
+SRCREV_chromium = "fdfef5b37af3bed8402d7c7e20a5487f2602b0a6"
 SRCREV = "${SRCREV_qtwebengine}"
 
 SRCREV_FORMAT = "qtwebengine_chromium"
