@@ -180,6 +180,7 @@ SRC_URI += " \
     file://chromium/0011-chromium-Add-missing-include-for-C-strncpy.patch;patchdir=src/3rdparty \
     file://chromium/0011-chromium-skia-Fix-build-with-gcc-12.patch;patchdir=src/3rdparty \
     file://chromium/0012-Remove-unsetting-_FILE_OFFSET_BITS.patch;patchdir=src/3rdparty \
+    file://chromium/0024-Fix-dependecy-when-compiling-content-browser.patch;patchdir=src/3rdparty \
 "
 
 # Patches from https://github.com/meta-qt5/qtwebengine-chromium/commits/87-based
