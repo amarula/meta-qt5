@@ -21,7 +21,7 @@ FILES:${PN}-qmlplugins += " \
   ${OE_QMAKE_PATH_QML}/QtQuick3D/Helpers/meshes/*.mesh \
 "
 
-SRCREV_qtquick3d = "d3272d49a0a01714bc486e0fd39ae2bbfe7a74c6"
+SRCREV_qtquick3d = "2116071289c7e3d24f534b2d2498981b34b28cf8"
 SRCREV_assimp = "8f0c6b04b2257a520aaab38421b2e090204b69df"
 
 SRCREV_FORMAT = "qtquick3d_assimp"
