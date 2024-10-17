@@ -164,7 +164,6 @@ SRC_URI += " \
     file://chromium/0010-chromium-icu-use-system-library-only-targets.patch;patchdir=src/3rdparty \
     file://chromium/0011-chromium-skia-Fix-build-with-gcc-12.patch;patchdir=src/3rdparty \
     file://chromium/0012-Remove-unsetting-_FILE_OFFSET_BITS.patch;patchdir=src/3rdparty \
-    file://chromium/0024-Fix-dependecy-when-compiling-content-browser.patch;patchdir=src/3rdparty \
 "
 
 # Patches from https://github.com/meta-qt5/qtwebengine-chromium/commits/87-based
@@ -183,8 +182,8 @@ SRC_URI:append:libc-musl = "\
     file://chromium/0023-chromium-musl-initialize-msghdr-in-a-compatible-mann.patch;patchdir=src/3rdparty \
 "
 
-SRCREV_qtwebengine = "d45daa1d1fe3311c6c588b8a0be846679d30278b"
-SRCREV_chromium = "fdfef5b37af3bed8402d7c7e20a5487f2602b0a6"
+SRCREV_qtwebengine = "16b714e29a15d2e22d80243cebc1030b1cb59641"
+SRCREV_chromium = "d11884ddfc41ebc812db74cac4a6bfea7fd0990d"
 SRCREV = "${SRCREV_qtwebengine}"
 
 SRCREV_FORMAT = "qtwebengine_chromium"
