@@ -9,4 +9,4 @@ require qt5-lts.inc
 
 DEPENDS += "qtbase"
 
-SRCREV = "a5e9cf1be50bc6ecc9718612d25cc47fd2fcfe4f"
+SRCREV = "a8fdb07d8ed8993973765a6e3c0b2ff4e01cc0ad"
